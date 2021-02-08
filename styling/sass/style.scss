@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 1440px;
+    font-size: 16px;
+}
+
+nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    z-index: 4;
+
+    .menu-options{
+        a{
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 0.9em;
+        }
+
+        #active{
+            border:hsl(256, 26%, 20%) 2px solid;
+            padding: 10px 30px;
+        }
+
+
+    }
+
+
+    
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    #bg-pattern-intro-right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    #bg-pattern-intro-left{
+        position: absolute;
+        left: 0;
+        top: 500px;
+    }
+
+    .intro{
+        background-color: hsl(256, 26%, 20%);
+        
+        
+       
+       padding-top: 150px;
+       padding-left: 150px;
+       height: 550px;
+
+       .intro-text{
+           padding: 10px;
+       }
+
+        img{
+            width: 600px;
+            overflow: hidden;
+            position: absolute;
+            left: 650px;
+            top: 120px;
+        }
+    }
+
+    .main-info{
+        padding-top: 250px;
+        padding-left: 150px;
+
+        .card-container{
+            display: flex;
+            justify-content: space-around;
+            border: gray 1px solid;
+            width: 1100px;
+            padding: 40px 0;
+        }
+
+        .banner{
+            display: flex;
+            width: 1100px;
+            padding: 50px 1px;
+            justify-content: space-around;
+            background-color: hsl(256, 26%, 20%);
+            background-image: url('../../images/bg-pattern-how-we-work-desktop.svg');
+            background-repeat: no-repeat;
+            background-position: right;
+
+        }
+
+    }
+
+    .footer{
+        background-color: hsl(0, 0%, 98%);
+
+        .social-media{
+            display: flex;
+            justify-content: space-around;
+            padding-left: 150px;
+            padding-top: 70px;
+            padding-bottom: 40px;
+        }
+
+        .footer-content{
+            display: flex;
+            padding-left: 150px;
+            width: 1100px;
+        }
+    }
+}
